@@ -1,0 +1,10 @@
+An example of Confirmation bias would be an employee beliving in outdated studies
+showing that OpenBSD is "the most secure OS". Leading to them not knowing that the
+attempt to support 14* diferent cpu archutextures leads to slower development and
+thus patches for CVEs being rolled out slower then other l/unix OSes. The OpenBSD
+team also maintains other important projects like OpenSSH, OpenSSL, and many other
+networking tools. Since these tools also support the same CPUs that OpenBSD does
+they are also slow to update. While OpenBSD is still one of the most secure OSes
+it is not flawless and the employee ignores any critasism as "linux fanboyism".
+Only reading articales talking about what makes OpenBSD so wonderfull and never
+what flaws it has and why other OSes are better given certain situations.

@@ -1,0 +1,26 @@
+The best way to deal with any bias in cyber security that can scew the judgement of
+an expert in the field is to remember the war between security and hacking is not a 
+match of league of legends. It is a continues never ending war. Not a one of event 
+totally isolated form the rest of the world. Undescovered hardware vualnrabilities 
+may be inside all the hardware the organization makes use of. 
+
+A war has many fronts and just beacuse the software front is "100% secure" does not 
+mean every front is. Physical security is also a factor as what a bad actor with 
+physical acess to a machine skyrockets. Humans are not perfect cretures and we all
+make mistakes eventually. A server admin acidentally forgetting to disable the 
+root account in a l/unix server could be disasterous as the root user has FULL
+UNIMITGATED access to the entire system.
+
+This is why to reduce the strnaglehold that biases can have over your choices
+in the workplace one should:
+1) Not to be afraid of being wrong.
+2) Avoid partaking in/creating echo chambers.
+3) Should be ok with concepts they are familuar with becoming outdated/deprecated.
+4) Be open to other's perspectives/solutions.
+5) Design systems with human error in mind.
+6) Go of tests not just past experiance.
+7) Seak out constructive & good fath arguments with peopl of oposing/conflicting views.
+8) Stay in touch with cyber security news.
+9) Inform others on how them lacking security effects others in the workplace.
+10) Treat no source as the objective truth. The turth often has hidden conditions for it to be "true".
+11) Humans are not without flaws and thus can not make flawless things.

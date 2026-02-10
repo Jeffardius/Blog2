@@ -1,0 +1,7 @@
+Confirmation bias is the tendency to seakout things that confirm your beliefs.
+While optimism bias is the tendency over estimate the chances of good outcomes &
+underestimating the chances of bad outcomes. Both can lead a cyber security expert
+to asume that a system is "inpenetrable".  
+
+Confirmation bias will lead one to interpret data in a way to "confirm" what the
+expert already "knows" to be true. 

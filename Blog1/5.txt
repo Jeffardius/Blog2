@@ -1,0 +1,7 @@
+Yet another exmaple of how a optimism bias could effect actions is an employee 
+storing all work related passwords in an unencrypted txt file in the desktop folder
+named passwords.txt. When asked the employee responds with "I am not even a server
+admin what could possibly go wrong if I get hacked". Unaware that the account(s)
+will be used to send out phishing emails or probe for other holes in the protections
+inplace. Such as checking for accounts being given more rights then needed. Leading
+to a lot of time waisted for the cyber security department.

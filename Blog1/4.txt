@@ -1,0 +1,10 @@
+Optimism bias will lead to an expert beliving that the system is "impossible to crack".
+Not knowing that if something can it will happen. Or that if it is cracked that nothing
+major will happen.
+
+For example the codebase for a company being rewriten in rust from c/c++ leading to a 
+system being "effectivally unbreakable" (70% of security issues in apps a result of
+memory management errors that are impossible in rust). Dismissing the fact that 70%
+is not the same as 100% and the fact that code errors are not the entire picture when 
+it comes to cyber security. Not to mentions that no tool is perfect. Even if it is
+recommended by the FBI.
