@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define the content for each section with embedded text
     const content = {
         'introduction-content': [
-            { type: 'text', content: 'The titanic effect.\nHow Confirmation Bias and Optimism Bias lead to security breaches.' },
+            { type: 'text', content: 'The importance of cyber security in eduction..' },
             { type: 'text', content: 'Confirmation bias is the tendency to seakout things that confirm your beliefs.\nWhile optimism bias is the tendency over estimate the chances of bad outcomes &\nunderestimating the chances of bad outcomes. Both can lead a cyber security expert\nto asume that a system is "inpenetrable".\n\nConfirmation bias will lead one to interpret data in a way to "confirm" what the\nexpert already "knows" to be true.' },
             { type: 'image', file: '1.jpg' }
         ],
