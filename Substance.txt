@@ -1,86 +1,19 @@
-The titanic effect.
-How Confirmation Bias and Optimism Bias lead to security breaches.
+# title
+The importance of cyber security in eduction.
 
+#1 Why schould schools care?
+There are many reasons why schools should take cybersecurity seriously. If the school gets DDOSed then no work depending on internet 
+conectivity will be done. The information of students being leaked is very bad for public perception. If the infromation of staff member 
+gets leaked then the chances of someone wanting to work at the school in question go down. If an account of a student/staff member gets
+hacked then the account can be used to cause further damage. Including but not limited to: full access to all information on students and staff,
+changing the code behind related websites, and damage to hardware. 
 
-Confirmation bias is the tendency to seakout things that confirm your beliefs.
-While optimism bias is the tendency over estimate the chances of good outcomes &
-underestimating the chances of bad outcomes. Both can lead a cyber security expert
-to asume that a system is "inpenetrable".  
+#2 Misconceptions about cyber security
+Most children don't even know how networking works. How could they possibly do anything listed above?
+Cybersecurity is about stoping bad actors regardless of age from interfering from the daily operation.
 
-Confirmation bias will lead one to interpret data in a way to "confirm" what the
-expert already "knows" to be true. 
+A strong password will stop any threat.
+As computers grow more and more powerfull with every passing year it has become more viable to use "brute force password cracking". Which is
+the act is breaking passwords by guessing the password. Which is why mesures like passkeys and 2 factor athentication have bcome more populare
+in recent years.
 
-An example of Confirmation bias would be an employee beliving in outdated studies
-showing that OpenBSD is "the most secure OS". Leading to them not knowing that the
-attempt to support 14* diferent cpu archutextures leads to slower development and
-thus patches for CVEs being rolled out slower then other l/unix OSes. The OpenBSD
-team also maintains other important projects like OpenSSH, OpenSSL, and many other
-networking tools. Since these tools also support the same CPUs that OpenBSD does
-they are also slow to update. While OpenBSD is still one of the most secure OSes
-it is not flawless and the employee ignores any critasism as "linux fanboyism".
-Only reading articales talking about what makes OpenBSD so wonderfull and never
-what flaws it has and why other OSes are better given certain situations.
-
-Optimism bias will lead to an expert beliving that the system is "impossible to crack".
-Not knowing that if something can it will happen. Or that if it is cracked that nothing
-major will happen.
-
-For example the codebase for a company being rewriten in rust from c/c++ leading to a 
-system being "effectivally unbreakable" (70% of security issues in apps a result of
-memory management errors that are impossible in rust). Dismissing the fact that 70%
-is not the same as 100% and the fact that code errors are not the entire picture when 
-it comes to cyber security. Not to mentions that no tool is perfect. Even if it is
-recommended by the FBI.
-
-Yet another exmaple of how a optimism bias could effect actions is an employee 
-storing all work related passwords in an unencrypted txt file in the desktop folder
-named passwords.txt. When asked the employee responds with "I am not even a server
-admin what could possibly go wrong if I get hacked". Unaware that the account(s)
-will be used to send out phishing emails or probe for other holes in the protections
-inplace. Such as checking for accounts being given more rights then needed. Leading
-to a lot of time waisted for the cyber security department.
-
-The best way to deal with any bias in cyber security that can scew the judgement of
-an expert in the field is to remember the war between security and hacking is not a 
-match of league of legends. It is a continues never ending war. Not a one of event 
-totally isolated form the rest of the world. Undescovered hardware vualnrabilities 
-may be inside all the hardware the organization makes use of. 
-
-A war has many fronts and just beacuse the software front is "100% secure" does not 
-mean every front is. Physical security is also a factor as what a bad actor with 
-physical acess to a machine skyrockets. Humans are not perfect cretures and we all
-make mistakes eventually. A server admin acidentally forgetting to disable the 
-root account in a l/unix server could be disasterous as the root user has FULL
-UNIMITGATED access to the entire system.
-
-This is why to reduce the strnaglehold that biases can have over your choices
-in the workplace one should:
-1) Not to be afraid of being wrong.
-2) Avoid partaking in/creating echo chambers.
-3) Should be ok with concepts they are familuar with becoming outdated/deprecated.
-4) Be open to other's perspectives/solutions.
-5) Design systems with human error in mind.
-6) Go of tests not just past experiance.
-7) Seak out constructive & good fath arguments with peopl of oposing/conflicting views.
-8) Stay in touch with cyber security news.
-9) Inform others on how them lacking security effects others in the workplace.
-10) Treat no source as the objective truth. The turth often has hidden conditions for it to be "true".
-11) Humans are not without flaws and thus can not make flawless things.
-
-
-Sources:
-Crouse, M. (n.d.). Software makers encouraged to stop using C/C++ by 2026. techrepublic.
-https://www.techrepublic.com/article/cisa-fbi-memory-safety-recommendations/ 
-
-Alnifie, K. M., & Kim, C. (2023, February 23). Appraising the manifestation of optimism bias and its impact on human perception of cyber security a meta analysis. SCIRP. https://www.scirp.org/journal/paperinformation?paperid=123196 
-
-Bertrand. (2025, November 5). Neuroscience and cybersecurity: Understanding cognitive biases. Hardis Group.
-https://www.hardis-group.com/en/blog/neuroscience-and-cybersecurity-defeating-cognitive-biases-to-reduce-human-error/ 
-
-Eling, M., & Jung, K. (2025). Optimism bias and its impact on cyber risk management decisions. ScienceDirect.
-https://www.sciencedirect.com/science/article/pii/S2950629824000018 
-
-
-
-All content found in this file was made by me and me alone all code related to website was made with qwen ai.
-Click on "index.html" to load website.

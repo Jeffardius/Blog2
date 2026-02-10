@@ -1,7 +1,5 @@
-Confirmation bias is the tendency to seakout things that confirm your beliefs.
-While optimism bias is the tendency over estimate the chances of good outcomes &
-underestimating the chances of bad outcomes. Both can lead a cyber security expert
-to asume that a system is "inpenetrable".  
-
-Confirmation bias will lead one to interpret data in a way to "confirm" what the
-expert already "knows" to be true. 
+There are many reasons why schools should take cybersecurity seriously. If the school gets DDOSed then no work depending on internet 
+conectivity will be done. The information of students being leaked is very bad for public perception. If the infromation of staff member 
+gets leaked then the chances of someone wanting to work at the school in question go down. If an account of a student/staff member gets
+hacked then the account can be used to cause further damage. Including but not limited to: full access to all information on students and staff,
+changing the code behind related websites, and damage to hardware. 
