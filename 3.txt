@@ -1,10 +1,13 @@
-An example of Confirmation bias would be an employee beliving in outdated studies
-showing that OpenBSD is "the most secure OS". Leading to them not knowing that the
-attempt to support 14* diferent cpu archutextures leads to slower development and
-thus patches for CVEs being rolled out slower then other l/unix OSes. The OpenBSD
-team also maintains other important projects like OpenSSH, OpenSSL, and many other
-networking tools. Since these tools also support the same CPUs that OpenBSD does
-they are also slow to update. While OpenBSD is still one of the most secure OSes
-it is not flawless and the employee ignores any critasism as "linux fanboyism".
-Only reading articales talking about what makes OpenBSD so wonderfull and never
-what flaws it has and why other OSes are better given certain situations.
+Most children don't even know how networking works. How could they possibly do anything listed above?
+Cybersecurity is about stoping bad actors regardless of age from interfering from the daily operation.
+
+A strong password will stop any threat.
+As computers grow more and more powerfull with every passing year it has become more viable to use "brute force password cracking". Which is
+the act is breaking passwords by guessing the password. Which is why mesures like passkeys and 2 factor athentication have bcome more populare
+in recent years.
+
+Cybersecurity costs more then it's worth.
+Damage to even 5 SSDs is more money then the price of 1 cybersecurity auditor highered to prevent such damage.
+
+The school I worked for never got hacked so I shouldn't care.
+Everything that can go wron will go wrong given enough time. 
