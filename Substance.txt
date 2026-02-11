@@ -17,4 +17,4 @@ As computers grow more and more powerfull with every passing year it has become 
 the act is breaking passwords by guessing the password. Which is why mesures like passkeys and 2 factor athentication have bcome more populare
 in recent years.
 
-Cybersecurity costs more then it's wor
+Cybersecurity costs more then it's worth.
