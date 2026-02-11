@@ -22,14 +22,15 @@ document.addEventListener('DOMContentLoaded', async function() {
         'solutions-content': '6.png'
     };
 
-    // Function to fetch text file content (with cache-busting)
+    // Function to fetch text file content. Uses raw GitHub URL to avoid CDN cache issues on Vercel.
     async function fetchTextFile(filename) {
         try {
-            // Append a cache-busting query param so CDN/edge caches return fresh content
-            const url = `${filename}?_=${Date.now()}`;
+            // Fetch directly from the repository's raw content on GitHub to ensure latest content
+            const githubRawBase = 'https://raw.githubusercontent.com/Jeffardius/Blog2/main/';
+            const url = `${githubRawBase}${filename}?_=${Date.now()}`;
             const response = await fetch(url, { cache: 'no-store' });
             if (!response.ok) {
-                throw new Error(`Failed to load ${filename} (status ${response.status})`);
+                throw new Error(`Failed to load ${filename} from GitHub raw (status ${response.status})`);
             }
             return await response.text();
         } catch (error) {
