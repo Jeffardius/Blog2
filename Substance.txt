@@ -37,4 +37,5 @@ Everything that can go wron will go wrong given enough time.
 7) Do not connect devices to the network unless they need it for operation. Printers that are intended for the secretary to use should not need internet access if it is already connected to the pc via usb.
 8) Password protect the BIOS/EUFI of devices. This will prevent bad actors from being able to boot an OS from a usb drive which cercomvents most secretary mesures.
 
-#4 Types of ma
+#4 Common terms
+CVE stands for Common Vulnerabilities and Exposures. It can be thought of as a fancy term for exploit/vulnerability.
