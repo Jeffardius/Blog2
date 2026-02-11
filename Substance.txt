@@ -39,3 +39,4 @@ Everything that can go wron will go wrong given enough time.
 
 #4 Common terms
 CVE stands for Common Vulnerabilities and Exposures. It can be thought of as a fancy term for exploit/vulnerability.
+Malware types
