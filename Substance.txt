@@ -31,4 +31,4 @@ Everything that can go wron will go wrong given enough time.
 1) Never relly on one security solution. It is like trying to prevent a bank robbery by having only locked doors.
 2) Do not use obscure software. The more obscure the software is the more likely it has security issues the developers are unaware of.
 3) Train school staff to not trust any emails (or any other forms of communication) by default.
-4) Reduce the software footprint. Software may have flaws that allow for normal 
+4) Reduce the software footprint. Software may have flaws that allow for normal user to run in admin mode and as a result download 
