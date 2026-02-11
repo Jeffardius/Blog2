@@ -9,6 +9,7 @@ hacked then the account can be used to cause further damage. Including but not l
 changing the code behind related websites, and damage to hardware. 
 
 #2 Misconceptions about cyber security
+1)
 Most children don't even know how networking works. How could they possibly do anything listed above?
 Cybersecurity is about stoping bad actors regardless of age from interfering from the daily operation.
 
