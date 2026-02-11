@@ -18,3 +18,4 @@ the act is breaking passwords by guessing the password. Which is why mesures lik
 in recent years.
 
 Cybersecurity costs more then it's worth.
+Damage to 
