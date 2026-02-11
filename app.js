@@ -1,64 +1,80 @@
-// Static content loader with embedded content and image placement
-document.addEventListener('DOMContentLoaded', function() {
-    // Define the content for each section with embedded text
-    const content = {
-        'introduction-content': [
-            { type: 'text', content: 'The importance of cyber security in eduction..' },
-            { type: 'text', content: 'Confirmation bias is the tendency to seakout things that confirm your beliefs.\nWhile optimism bias is the tendency over estimate the chances of bad outcomes &\nunderestimating the chances of bad outcomes. Both can lead a cyber security expert\nto asume that a system is "inpenetrable".\n\nConfirmation bias will lead one to interpret data in a way to "confirm" what the\nexpert already "knows" to be true.' },
-            { type: 'image', file: '1.jpg' }
-        ],
-        'confirmation-bias-content': [
-            { type: 'text', content: 'An example of Confirmation bias would be an employee beliving in outdated studies\nshowing that OpenBSD is "the most secure OS". Leading to them not knowing that the\nattempt to support 14* diferent cpu archutextures leads to slower development and\nthus patches for CVEs being rolled out slower then other l/unix OSes. The OpenBSD\nteam also maintains other important projects like OpenSSH, OpenSSL, and many other\nnetworking tools. Since these tools also support the same CPUs that OpenBSD does\nthey are also slow to update. While OpenBSD is still one of the most secure OSes\nit is not flawless and the employee ignores any critasism as "linux fanboyism".\nOnly reading articales talking about what makes OpenBSD so wonderfull and never\nwhat flaws it has and why other OSes are better given certain situations.' },
-            { type: 'image', file: '3.jpg' }
-        ],
-        'optimism-bias-content': [
-            { type: 'text', content: 'Optimism bias will lead to an expert beliving that the system is "impossible to crack".\nNot knowing that if something can it will happen. Or that if it is cracked that nothing\nmajor will happen.\n\nFor example the codebase for a company being rewriten in rust from c/c++ leading to a\nsystem being "effectivally unbreakable" (70% of security issues in apps a result of\nmemory management errors that are impossible in rust). Dismissing the fact that 70%\nis not the same as 100% and the fact that code errors are not the entire picture when\nit comes to cyber security. Not to mentions that no tool is perfect. Even if it is\nrecommended by the FBI.' },
-            { type: 'image', file: '4-2.jpg' }
-        ],
-        'examples-content': [
-            { type: 'text', content: 'Yet another exmaple of how a optimism bias could effect actions is an employee may\nstoring all work related passwords in an unencrypted txt file in the desktop folder\nnamed passwords.txt. When asked the employee responds with "I am not even a server\nadmin what could possibly go wrong if I get hacked". Unaware that the account(s)\nwill be used to send out phishing emails or probe for other holes in the protections\ninplace. Such as checking for accounts being given more rights then needed. Leading\nto a lot of time waisted for the cyber security department.' },
-            { type: 'image', file: '5.jpg' }
-        ],
-        'solutions-content': [
-            { type: 'text', content: 'The best way to deal with any bias in cyber security that can scew the judgement of\nan expert in the field is to remember the war between security and hacking is not a\nmatch of league of legends. It is a continues never ending war. Not a one of event\ntotally isolated form the rest of the world. Undescovered hardware vualnrabilities\nmay be inside all the hardware the organization makes use of.\n\nA war has many fronts and just beacuse the software front is "100% secure" does not\nmean every front is. Physical security is also a factor as what a bad actor with\nphysical acess to a machine skyrockets. Humans are not perfect cretures and we all\nmake mistakes eventually. A server admin acidentally forgetting to disable the\nroot account in a l/unix server could be disasterous as the root user has FULL\nUNIMITGATED access to the entire system.\n\nThis is why to reduce the strnaglehold that biases can have over your choices\nin the workplace one should:\n1) Not to be afraid of being wrong.\n2) Avoid partaking in/creating echo chambers.\n3) Should be ok with concepts they are familuar with becoming outdated/deprecated.\n4) Be open to other\'s perspectives/solutions.\n5) Design systems with human error in mind.\n6) Go of tests not just past experiance.\n7) Seak out constructive & good fath arguments with peopl of oposing/conflicting views.\n8) Stay in touch with cyber security news.\n9) Inform others on how them lacking security effects others in the workplace.\n10) Treat no source as the objective truth. The turth often has hidden conditions for it to be "true".\n11) Humans are not without flaws and thus can not make flawless things.' },
-            { type: 'image', file: '6.png' }
-        ],
-        'sources-content': [
-            { type: 'text', content: 'Sources:\nCrouse, M. (n.d.). Software makers encouraged to stop using C/C++ by 2026. techrepublic.\nhttps://www.techrepublic.com/article/cisa-fbi-memory-safety-recommendations/\n\nAlnifie, K. M., & Kim, C. (2023, February 23). Apprasing the manifestation of optimism bias and its impact on human perception of cyber security a meta analysis. SCIRP. https://www.scirp.org/journal/paperinformation?paperid=123196\n\nBertrand. (2025, November 5). Neuroscience and cybersecurity: Understanding cognitive biases. Hardis Group.\nhttps://www.hardis-group.com/en/blog/neuroscience-and-cybersecurity-defeating-cognitive-biases-to-reduce-human-error/\n\nEling, M., & Jung, K. (2025). Optimism bias and its impact on cyber risk management decisions. ScienceDirect.\nhttps://www.sciencedirect.com/science/article/pii/S2950629824000018' }
-        ]
+// Dynamic content loader from txt files
+document.addEventListener('DOMContentLoaded', async function() {
+    // Static first text for introduction
+    const staticIntroductionText = 'Why schould schools care?';
+    
+    // Mapping of content containers to their txt files
+    const contentFileMapping = {
+        'introduction-content': '1.txt',
+        'confirmation-bias-content': '3.txt',
+        'optimism-bias-content': '4.txt',
+        'examples-content': '5.txt',
+        'solutions-content': '6.txt',
+        'sources-content': '7.txt'
     };
 
+    // Fixed image files for each section
+    const sectionImages = {
+        'introduction-content': '1.jpg',
+        'confirmation-bias-content': '3.jpg',
+        'optimism-bias-content': '4-2.jpg',
+        'examples-content': '5.jpg',
+        'solutions-content': '6.png'
+    };
+
+    // Function to fetch text file content
+    async function fetchTextFile(filename) {
+        try {
+            const response = await fetch(filename);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${filename}`);
+            }
+            return await response.text();
+        } catch (error) {
+            console.error(`Error loading ${filename}:`, error);
+            return '';
+        }
+    }
+
     // Load content for each section
-    for (const [containerId, items] of Object.entries(content)) {
+    for (const [containerId, filename] of Object.entries(contentFileMapping)) {
         const container = document.getElementById(containerId);
+        const section = container.closest('section');
+        const header = section.querySelector('h2');
 
         // Clear the "Loading content..." text
         container.innerHTML = '';
 
-        // Get the section element to find its header
-        const section = container.closest('section');
-        const header = section.querySelector('h2');
+        // Fetch the text file content
+        const fileContent = await fetchTextFile(filename);
 
-        items.forEach(item => {
-            if (item.type === 'text') {
-                const textElement = document.createElement('div');
-                textElement.className = 'loaded-text';
-                // Convert newlines to <br> tags for proper formatting
-                const formattedText = item.content.replace(/\n/g, '<br>');
-                textElement.innerHTML = `<p>${formattedText}</p>`;
-                container.appendChild(textElement);
-            } else if (item.type === 'image') {
-                // Create image container and add it to the header
-                const imgContainer = document.createElement('div');
-                imgContainer.className = 'image-container';
-                imgContainer.innerHTML = `
-                    <img src="${item.file}" alt="${item.file}">
-                `;
+        // For introduction-content, add the static first text
+        if (containerId === 'introduction-content') {
+            const staticText = document.createElement('div');
+            staticText.className = 'loaded-text';
+            staticText.innerHTML = `<p>${staticIntroductionText}</p>`;
+            container.appendChild(staticText);
+        }
 
-                // Add the image to the header
-                header.appendChild(imgContainer);
-            }
-        });
+        // Add the dynamically loaded text
+        if (fileContent) {
+            const textElement = document.createElement('div');
+            textElement.className = 'loaded-text';
+            // Convert newlines to <br> tags for proper formatting
+            const formattedText = fileContent.replace(/\n/g, '<br>').trim();
+            textElement.innerHTML = `<p>${formattedText}</p>`;
+            container.appendChild(textElement);
+        }
+
+        // Add image if this section has one
+        if (sectionImages[containerId]) {
+            const imgContainer = document.createElement('div');
+            imgContainer.className = 'image-container';
+            imgContainer.innerHTML = `
+                <img src="${sectionImages[containerId]}" alt="${sectionImages[containerId]}">
+            `;
+            header.appendChild(imgContainer);
+        }
     }
 
     // Add the original source to the sources section (after the content from 7.txt)
