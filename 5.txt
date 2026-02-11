@@ -1,7 +1,8 @@
-Yet another exmaple of how a optimism bias could effect actions is an employee 
-storing all work related passwords in an unencrypted txt file in the desktop folder
-named passwords.txt. When asked the employee responds with "I am not even a server
-admin what could possibly go wrong if I get hacked". Unaware that the account(s)
-will be used to send out phishing emails or probe for other holes in the protections
-inplace. Such as checking for accounts being given more rights then needed. Leading
-to a lot of time waisted for the cyber security department.
+#4 Common terms
+CVE stands for Common Vulnerabilities and Exposures. It can be thought of as a fancy term for exploit/vulnerability.
+Malware is malicous software. Even though malware and virus are used interchangeably they aren't the same.
+Virus is a specific type of malware that infects files as a means to sbread. 
+Worm is a specific type of malware that self replicates and spread automatically over the internet. It doesn't even need user interaction to inefect a machine.
+Trojan a program desinged to look legit but steals user information and/or opens up pathways for more malware to infect device.
+Ransomware is malware the encrypts files and demands payment to unlock. Often files are also deleted over a set interval (one file every 5 minutes).
+Rootkit inbeds itself into the boot process of a device giving privileged access to attackers. Advanced root kits can even infect the BIOS/UEFI instead of the OS.
