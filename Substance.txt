@@ -28,4 +28,4 @@ The school I worked for never got hacked so I shouldn't care.
 Everything that can go wron will go wrong given enough time. 
 
 #3 How to improve cybersecurity
-Never relly on one security solution. It is like trying to prevent a bank robbery by having only locked doors.
+1) Never relly on one security solution. It is like trying to prevent a bank robbery by having only locked doors.
