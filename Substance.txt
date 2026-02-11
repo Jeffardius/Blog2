@@ -40,4 +40,4 @@ Everything that can go wron will go wrong given enough time.
 #4 Common terms
 CVE stands for Common Vulnerabilities and Exposures. It can be thought of as a fancy term for exploit/vulnerability.
 Malware is malicous software. Even though malware and virus are used interchangeably they aren't the same.
-Virus is a specific type of malware that infects files as a means to sbread
+Virus is a specific type of malware that infects files as a means to sbread. 
