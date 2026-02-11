@@ -27,10 +27,6 @@ Damage to even 5 SSDs is more money then the price of 1 cybersecurity auditor hi
 The school I worked for never got hacked so I shouldn't care.
 Everything that can go wron will go wrong given enough time. 
 
-5)
-Cybersecurity is all done in software.
-
-
 #3 How to improve cybersecurity
 1) Never relly on one security solution. It is like trying to prevent a bank robbery by having only locked doors.
 2) Do not use obscure software. The more obscure the software is the more likely it has security issues the developers are unaware of.
