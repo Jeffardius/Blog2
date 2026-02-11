@@ -34,4 +34,4 @@ Everything that can go wron will go wrong given enough time.
 4) Reduce the software footprint. Software may have flaws that allow for normal user to run in admin mode and as a result download malware.
 5) Do not provide devices/users with more rights then the bare minimum to get work done.
 6) Isolate devices from each other on the network based on who needs access to them. Such that student computers can not interact with server computers.
-7) Do not connect devices to the network unless they need it for operation. Printers that are intended for 
+7) Do not connect devices to the network unless they need it for operation. Printers that are intended for the 
