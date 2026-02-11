@@ -19,6 +19,7 @@ As computers grow more and more powerfull with every passing year it has become 
 the act is breaking passwords by guessing the password. Which is why mesures like passkeys and 2 factor athentication have bcome more populare
 in recent years.
 
+3)
 Cybersecurity costs more then it's worth.
 Damage to even 5 SSDs is more money then the price of 1 cybersecurity auditor highered to prevent such damage.
 
