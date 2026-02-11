@@ -33,4 +33,4 @@ Everything that can go wron will go wrong given enough time.
 3) Train school staff to not trust any emails (or any other forms of communication) by default.
 4) Reduce the software footprint. Software may have flaws that allow for normal user to run in admin mode and as a result download malware.
 5) Do not provide devices/users with more rights then the bare minimum to get work done.
-6) Isolate devices from each other on the network based on 
+6) Isolate devices from each other on the network based on who needs access to them
