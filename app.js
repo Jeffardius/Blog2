@@ -22,12 +22,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         'solutions-content': '6.png'
     };
 
-    // Function to fetch text file content
+    // Function to fetch text file content (with cache-busting)
     async function fetchTextFile(filename) {
         try {
-            const response = await fetch(filename);
+            // Append a cache-busting query param so CDN/edge caches return fresh content
+            const url = `${filename}?_=${Date.now()}`;
+            const response = await fetch(url, { cache: 'no-store' });
             if (!response.ok) {
-                throw new Error(`Failed to load ${filename}`);
+                throw new Error(`Failed to load ${filename} (status ${response.status})`);
             }
             return await response.text();
         } catch (error) {
