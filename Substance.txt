@@ -30,4 +30,4 @@ Everything that can go wron will go wrong given enough time.
 #3 How to improve cybersecurity
 1) Never relly on one security solution. It is like trying to prevent a bank robbery by having only locked doors.
 2) Do not use obscure software. The more obscure the software is the more likely it has security issues the developers are unaware of.
-3) 
+3) Train 
