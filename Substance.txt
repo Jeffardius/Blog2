@@ -42,4 +42,4 @@ CVE stands for Common Vulnerabilities and Exposures. It can be thought of as a f
 Malware is malicous software. Even though malware and virus are used interchangeably they aren't the same.
 Virus is a specific type of malware that infects files as a means to sbread. 
 Worm is a specific type of malware that self replicates and spread automatically over the internet. It doesn't even need user interaction to inefect a machine.
-Trojan a program desinged to look legit but steals user information or opens up pathways for more damaging 
+Trojan a program desinged to look legit but steals user information and/or opens up pathways for more damaging 
