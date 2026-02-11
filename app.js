@@ -1,7 +1,6 @@
 // Dynamic content loader from txt files
 document.addEventListener('DOMContentLoaded', async function() {
     // Static first text for introduction
-    const staticIntroductionText = 'Why schould schools care?';
     
     // Mapping of content containers to their txt files
     const contentFileMapping = {
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (containerId === 'introduction-content') {
             const staticText = document.createElement('div');
             staticText.className = 'loaded-text';
-            staticText.innerHTML = `<p>${staticIntroductionText}</p>`;
             container.appendChild(staticText);
         }
 
