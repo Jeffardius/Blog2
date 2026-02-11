@@ -44,3 +44,4 @@ Virus is a specific type of malware that infects files as a means to sbread.
 Worm is a specific type of malware that self replicates and spread automatically over the internet. It doesn't even need user interaction to inefect a machine.
 Trojan a program desinged to look legit but steals user information and/or opens up pathways for more malware to infect device.
 Ransomware is malware the encrypts files and demands payment to unlock. Often files are also deleted over a set interval (one file every 5 minutes).
+Rootkit
